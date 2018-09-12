@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+
+body {
+  background-color: #e5e5e5;
+  font-family: 'Roboto Condensed', normal;
+  font-size: 18px
+}
+
+@media(max-width: 960px) {
+  .container {
+    width: auto;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+.container {
+  margin: 0 auto;
+  width: 960px;
+  min-width: 560px;
+  background-color: white;
+  box-sizing: border-box;
+  border-radius: 8px;
+  vertical-align: middle;
+}
+
+.header {
+  width: auto;
+  background: #4CAF50;
+  border-radius: 8px 8px 0px 0px;
+}
+
+.title {
+  margin: 0px;
+  padding: 32px;
+  text-align: center;
+}
+
+#content_list {
+  margin: 0px;
+}
+
+.collapsible-body {
+  background-color: #FAFAFA;
+  -webkit-box-shadow: inset 0px 0px 24px -2px rgba(153,153,153,0.6);
+  -moz-box-shadow: inset 0px 0px 24px -2px rgba(153,153,153,0.6);
+  box-shadow: inset 0px 0px 24px -2px rgba(153,153,153,0.6);
+}
+
+.venueTitle {
+  font-size: 26px;
+  margin: 0px;
+}
+
+.thumbnail {
+  width: 170px;
+  height: 170px;
+  border-radius: 8px;
+  margin: 4px;
+}
+
+.highlighted {
+  border: 5px solid #00E676;
+  box-sizing: border-box;
+}
+
+.info {
+  margin-left: 16px;
+  padding: 4px;
+}
+
+.infoText {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.red {
+  background-color: red;
+}
+
+.footer {
+  background-color: #388E3C;
+}
+
+.footerText {
+  color: white;
+  text-align: right;
+  padding: 8px;
+}
