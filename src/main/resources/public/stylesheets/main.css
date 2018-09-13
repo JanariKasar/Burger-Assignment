@@ -33,9 +33,11 @@ body {
 }
 
 .title {
-  margin: 0px;
-  padding: 32px;
+  margin-top: 0px;
+  font-weight: bold;
   text-align: center;
+  -webkit-text-stroke: 2px black;
+  color: white;
 }
 
 #content_list {

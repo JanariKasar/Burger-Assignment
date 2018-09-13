@@ -1,0 +1,1 @@
+web: java -jar target/BurgerJoints-0.0.1-SNAPSHOT.jar
