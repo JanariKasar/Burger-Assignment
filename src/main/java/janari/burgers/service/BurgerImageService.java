@@ -16,7 +16,7 @@ import java.util.List;
 public class BurgerImageService {
 
     private static final String serviceUrl = "https://pplkdijj76.execute-api.eu-west-1.amazonaws.com/prod/recognize";
-    private RestTemplate restTemplate = new RestTemplate();
+    private final RestTemplate restTemplate = new RestTemplate();
 
     /**
      * Question burger gods whether there's a image with a burger on it
@@ -35,6 +35,8 @@ public class BurgerImageService {
         headers.setContentType(MediaType.APPLICATION_JSON);
         Gson gson = new Gson();
 
+        // Loop until none of the images in testUrls list has a burger in it
+        // This way we can get list of images that have burger on it instead of just first one
         while (!testUrls.isEmpty()) {
             HttpEntity<String> entity = new HttpEntity<>(gson.toJson(new BurgerRequest(testUrls)), headers);
             try {
@@ -60,7 +62,7 @@ public class BurgerImageService {
 
     @Data
     @NoArgsConstructor
-    public static class BurgerResponse {
+    private static class BurgerResponse {
         private String urlWithBurger;
     }
 

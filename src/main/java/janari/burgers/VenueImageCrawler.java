@@ -18,6 +18,9 @@ public class VenueImageCrawler {
         this.venue = venue;
     }
 
+    /**
+     * @return list of venue images from actual foursquare venue page contains up to 16 pictures
+     */
     public List<String> getImageUrls() throws IOException {
         Document doc = Jsoup.connect(getVenueUrl()).timeout(30000).get();
         Element photosBlock = doc.select(".photosBlock").first();
